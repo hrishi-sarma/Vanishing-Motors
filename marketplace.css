@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.newsStuff {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.newscards {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.newscards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.newscards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.newscontent {
+    padding: 20px;
+    text-align: center;
+}
+
+.newscontent h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newscontent p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.search {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.searchcontent {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    width: 400px; /* Make the search bar longer */
+}
+
+.searchcontent img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.searchcontent textarea {
+    border: none;
+    background: none;
+    color: #000000;
+    font-size: 15px;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    height: 30px;
+    width: 250px; /* Fix the width of the textarea */
+    font-family: 'Courier New', Courier, monospace;
+}
